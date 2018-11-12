@@ -1,0 +1,97 @@
+{
+  "name": "@xq-stencil/node-jest-react-component",
+  "version": "1.1.5",
+  "description": "A simple server stencil based on node and used jest for test",
+  "main": "lib/index.js",
+  "engines": {
+    "node": ">= 6"
+  },
+  "files": [
+    "lib"
+  ],
+  "scripts": {
+    "clean": "rm -rf ./lib",
+    "babel": "babel src --out-dir lib --copy-files",
+    "babel:watch": "watch 'yarn babel' ./src",
+    "build": "yarn clean && yarn babel",
+    "lint": "eslint src",
+    "test": "nyc mocha test/SpecHelper.js test/**/*.js",
+    "test:watch": "watch 'yarn test' ./src",
+    "start": "webpack-dev-server --config config/webpack.config.js --open"
+  },
+  "dependencies": {},
+  "peerDependencies": {
+    "classnames": "^2.2.6",
+    "prop-types": "^15.6.2",
+    "react": "^16.5.2",
+    "react-dom": "^16.5.2"
+  },
+  "devDependencies": {
+    "@babel/cli": "^7.1.2",
+    "@babel/core": "^7.1.2",
+    "@babel/plugin-proposal-class-properties": "^7.1.0",
+    "@babel/plugin-proposal-export-default-from": "^7.0.0",
+    "@babel/plugin-proposal-export-namespace-from": "^7.0.0",
+    "@babel/polyfill": "^7.0.0",
+    "@babel/preset-env": "^7.1.0",
+    "@babel/preset-react": "^7.0.0",
+    "@babel/register": "^7.0.0",
+    "autoprefixer": "^9.3.1",
+    "babel-core": "^7.0.0-bridge",
+    "babel-eslint": "^10.0.1",
+    "babel-loader": "^8.0.4",
+    "babel-plugin-istanbul": "^5.1.0",
+    "chai": "^4.2.0",
+    "classnames": "^2.2.6",
+    "css-loader": "^1.0.0",
+    "enzyme": "^3.7.0",
+    "enzyme-adapter-react-16": "^1.6.0",
+    "eslint": "^5.9.0",
+    "eslint-plugin-react": "^7.11.1",
+    "html-webpack-plugin": "^3.2.0",
+    "ignore-styles": "^5.0.1",
+    "jsdom": "^13.0.0",
+    "jsdom-global": "^3.0.2",
+    "mocha": "^5.2.0",
+    "mochawesome": "^3.1.1",
+    "node-sass": "^4.9.3",
+    "nyc": "^13.1.0",
+    "path": "^0.12.7",
+    "postcss-loader": "^3.0.0",
+    "prop-types": "^15.6.2",
+    "react": "^16.5.2",
+    "react-dom": "^16.5.2",
+    "react-test-renderer": "^16.5.2",
+    "sass-loader": "^7.1.0",
+    "sinon": "^7.1.1",
+    "sinon-chai": "^3.2.0",
+    "style-loader": "^0.23.0",
+    "url-loader": "^1.1.2",
+    "watch": "^1.0.2",
+    "webpack": "^4.17.2",
+    "webpack-cli": "^3.1.0",
+    "webpack-dev-server": "^3.1.8"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/xqstencils/node-jest-react-component.git"
+  },
+  "keywords": [
+    "node",
+    "babel",
+    "mocha",
+    "react",
+    "eslint",
+    "security",
+    "circleci"
+  ],
+  "author": "Cao Xiaoqi<xqcao@xqcao.com>",
+  "contributors": [
+    "Xiaoqi Cao"
+  ],
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/xqstencils/node-jest-react-component/issues"
+  },
+  "homepage": "https://github.com/xqstencils/node-jest-react-component#readme"
+}
