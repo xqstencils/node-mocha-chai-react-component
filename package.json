@@ -1,10 +1,10 @@
 {
-  "name": "@xq-stencil/node-jest-react-component",
-  "version": "1.1.5",
-  "description": "A simple server stencil based on node and used jest for test",
+  "name": "@xq-stencil/node-mocha-chai-react-component",
+  "version": "0.1.0",
+  "description": "A simple react component stencil based on node and used mocha for test",
   "main": "lib/index.js",
   "engines": {
-    "node": ">= 6"
+    "node": ">= 8"
   },
   "files": [
     "lib"
@@ -74,7 +74,7 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/xqstencils/node-jest-react-component.git"
+    "url": "git+https://github.com/xqstencils/node-mocha-chai-react-component.git"
   },
   "keywords": [
     "node",
@@ -91,7 +91,7 @@
   ],
   "license": "MIT",
   "bugs": {
-    "url": "https://github.com/xqstencils/node-jest-react-component/issues"
+    "url": "https://github.com/xqstencils/node-mocha-chai-react-component/issues"
   },
-  "homepage": "https://github.com/xqstencils/node-jest-react-component#readme"
+  "homepage": "https://github.com/xqstencils/node-mocha-chai-react-component#readme"
 }
